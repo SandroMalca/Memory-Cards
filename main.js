@@ -7,8 +7,8 @@ let segundoResultado=null
 let movimientos=0
 let aciertos=0
 let temporizador=false
-let timer=30
-let timerInicial=30
+let timer=60
+let timerInicial=60
 let tiempoRegresivoId=null
 
 let winAudio= new Audio('./sound/win.wav')
@@ -37,6 +37,20 @@ function contarTiempo(){
             loseAudio.play()
         }
     },1000)
+    
+}
+
+function resetTimer(){    
+        
+    var interval;
+    function startTimer() {
+        var count = 0;
+        interval = setInterval(function() {
+            count++;
+            console.log(count);
+        }, 1000);
+    }
+      
     
 }
 
